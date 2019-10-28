@@ -1,0 +1,134 @@
+{
+    "extends": "airbnb",
+    "env":{
+        "browser" :true
+    },
+    "globals" :{
+        "beforeEach" :true,
+        "describe" : true,
+        "expect" : true,
+        "it" : true,
+        "jest" : true,
+        "should" : true
+    },
+    "parser":"babel-eslint",
+    "parserOptions" : {
+        "sourceType" : "module",
+        "ecmaFeatures" : {
+            "jsx" :true,
+            "experimentalObjectRestSpread" : true
+        }
+    },
+    "rules":{
+        "linebreak-style":[
+            "error",
+            "unix"
+        ],
+        "react/forbid-prop-types":0,
+        "import/no-named-as-default":0,
+        "react/jsx-filename-extension":[
+            "error",
+            {"extensions":[".js",".jsx"]}
+        ],
+        "padded-blocks": "off",
+        "quote-props": "off",
+        "max-len": "warn",
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "react/prefer-stateless-function": "warn",
+        "react/require-default-props": "off",
+        "react/no-array-index-key": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/*.spec.*"
+                ]
+            }
+        ],
+        "class-methods-use-this": "off",
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false
+            }
+        ],
+        "spaced-comment": "warn",
+        "newline-per-chained-call": [
+            "error",
+            {
+                "ignoreChainWithDepth": 3
+            }
+        ],
+        "no-extra-semi": "warn",
+        "no-return-assign": [
+            "error",
+            "except-parens"
+        ],
+        "no-else-return": "off",
+        "object-shorthand": "warn",
+        "function-paren-newline": "off",
+        "object-curly-newline" : "off",
+        "react/no-typos" : "off",
+        "jsx-ally/click-events-have-key-events" : "off",
+        "jsx-ally/mouse-events-have-key-events": "off",
+        "jsx-ally/label-has-for":[
+            "warn",
+            {
+                "required":{
+                    "some":[
+                        "nesting",
+                        "id"
+                    ]
+                }
+            }
+        ],
+        "jsx-ally/media-has-caption":"off",
+        "no-implicit-globals":"error",
+        "lines-between-class-members":"error",
+        "max-depth":"warn",
+        "indent":[
+            "error",
+            2,
+            {
+                "SwitchCase" :1,
+                "ignoredNodes":[
+                    "JSXElement"
+                ]
+            }
+        ],
+        "no-implicit-coercion":[
+            "error",
+            {
+                "boolean":true,
+                "number":true,
+                "string":true,
+                "allow":[]
+            }
+        ],
+        "prefer-const":[
+            "error",
+            {
+                "destructuring":"any",
+                "ignoreReadBeforeAssign":false,
+            }
+        ],
+        "no-plusplus":[
+            "error",
+            {
+                "allowForLoopAfterthoughts":true
+            }
+        ]
+
+    }
+}
