@@ -1,7 +1,7 @@
-# react-redux-graphql
-Project using React, Redux ,GraphQL for large Scale Applications development
+# Web Application built using React
+Web Application Project using React, Redux  for building user interface for large Scale Applications development
 
-##Base Folder Structure
+## Base Folder Structure
 
 Folder Structure is very important for maintaining large scale applications. Folder Structure should be clean and good enough for the developers to understand the application.
 
@@ -27,7 +27,7 @@ README.md
 
 
 
-##Source Folder Structure
+##  Source Folder Structure
 
 Folder Structure under /src for large scale applications
 
@@ -85,9 +85,9 @@ react-redux-graphql
 ├──store.js      
 └── README.md
 
-##General Guidelines on the Folder Structure
+## General Guidelines on the Folder Structure
 
-###Components
+### Components
 
  - Components that are defined at the root level of the project are global and can be used anywhere in your application.
  - If any new component is defined inside another component (nesting), this new component can only be used in its direct parent.
@@ -98,7 +98,7 @@ react-redux-graphql
  - ListView can also be used anywhere in the application. ListView component defines a component ListViewBar. You cannot use ListViewBar anywhere else other than ListView component.
  - ListViewBar can use TextField internally because TextField is defined at the root level of components.
 
-###Features
+### Features
 
 Features are the pages/ modules of the application.
 
@@ -111,11 +111,11 @@ Like how the components can be nested, features can also be nested into a featur
  - DashBoard feature uses HomePageBar internally, this is authorised because HomePageBar is defined by the parent HomePage feature.
  - DashBoard feature cannot use any of the components defined in Widgets feature, but it can use the HomePageBar component.
 
-###Services
+### Services
 
 Services act as a bridge/ an adapter between the server API and the view layer (features and components) of the application. It can take care of network calls the app will make, get and post content, and transform payloads as needed before being sent or saved in the store of the app (such as Redux). The features and components will only dispatch actions, read the store and update themselves based on the new changes.
 
-##General Guidelines/Standards that should be followed
+## General Guidelines/Standards that should be followed
 
  - Containers should be stateful. Containers manage data or are connected to the state and generally don’t have styling associated with them. Features are the container components of the application.
  - Components should be stateless. Components have styling associated with them and aren’t responsible for any data or state management. Basically, containers (features) are responsible for how things work, and components are responsible for how things look. As a result, you can confidently go in and edit your components without worrying about your data structures getting messed up, and you can edit your containers without worrying about the styling getting messed up.
