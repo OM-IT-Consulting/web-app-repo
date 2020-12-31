@@ -1,6 +1,14 @@
 # Web Application built using React
 Web Application Project using React, Redux  for building user interface for large Scale Applications development
 
+
+node version - v12.12.0
+Npm version - 6.11.3
+
+
+To build use npm run-script build
+To run use npm run-script start
+
 ## Base Folder Structure
 
 Folder Structure is very important for maintaining large scale applications. Folder Structure should be clean and good enough for the developers to understand the application.
